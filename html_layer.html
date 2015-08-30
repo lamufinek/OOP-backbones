@@ -1,0 +1,28 @@
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Backbone.js</title>
+       
+    </head>
+    <body>
+        <div class="container">
+            <h1>Publikujemy tekst-- Backbone.js-- Wenda Krzysztof</h1>
+            <hr />
+            <form id="new-post">
+                <label>autor:</label><input id="author-name" name="author-name" type="text"/>
+                <label>treść:</label><input id="status-update" name="status-update" type="text"/>
+                <button>publikuj</button>
+            </form>
+            <div id="posts-container"></div>
+        </div>
+
+       
+        
+        <script type="text/template" id="post-template">
+            <span class="author"><%= author %>:</span>
+            <span class="status"><%= status %></span>
+            <a href="#" class="edit">[edit]</a>
+            <a href="#" class="remove">[remove]</a>
+        </script>
+    </body>
+</html>
